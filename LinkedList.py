@@ -35,14 +35,14 @@ class LinkedList:
             self: Implicit object of class LinkedList.
         """
         elements = ''
-        total = 1
+        total = 0
         if self.head is None:
             return "\t\tEmpty List!"
         current = self.head
         while True:
             elements += f'|{current.data}|next|-->'
-            total += 1
             current = current.next
+            total += 1
             if current is None:
                 return f'\t\tTotal node(s): {total} \n\t\tNode(s) in Linked List are:\n\n\t\t{elements}None'
 
