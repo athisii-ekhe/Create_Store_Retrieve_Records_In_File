@@ -38,14 +38,13 @@ class LinkedList:
         total = 1
         if self.head is None:
             return "\t\tEmpty List!"
-        else:
-            current = self.head
-            while current.next is not None:
-                elements += f'|{current.data}|next|-->'
-                current = current.next
-                total += 1
-            elements += f'|{current.data}|next|-->None'
-            return f'\t\tTotal node(s): {total} \n\t\tNode(s) in Linked List are:\n\n\t\t{elements}'
+        current = self.head
+        while True:
+            elements += f'|{current.data}|next|-->'
+            total += 1
+            current = current.next
+            if current is None:
+                return f'\t\tTotal node(s): {total} \n\t\tNode(s) in Linked List are:\n\n\t\t{elements}None'
 
     def add_node(self, data):
         """
