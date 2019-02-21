@@ -30,7 +30,7 @@ class LinkedList:
 
     def __str__(self):
         """
-        Objective: To print all the elements of the linked list
+        Objective: To print all the nodes of the linked list
         Input Parameter:
             self: Implicit object of class LinkedList.
         """
