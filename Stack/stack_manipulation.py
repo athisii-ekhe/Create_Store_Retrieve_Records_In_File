@@ -99,6 +99,7 @@ def main():
         elif user_choice == '4':
             print(stack)
         elif user_choice == '5':
+            print("Exiting...")
             return
         else:
             print("Wrong choice! Try again...")
