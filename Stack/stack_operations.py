@@ -1,3 +1,5 @@
+#Required stack_manipulation.py to run this script.
+
 from stack_manipulation import *
 
 
@@ -41,7 +43,7 @@ def postfix_express_evaluation(postfix_express):
     """
     Objective: To evaluate postfix expression.
     Input Parameter:
-         postfix_express: An postfix expression whose value are to be calcuated.
+         postfix_express: An postfix expression whose value is to be calcuated.
     Return: Value of the postfix expression.
     """
     stack = Stack()
